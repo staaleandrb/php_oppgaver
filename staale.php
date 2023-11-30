@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo "Hei på deg"; ?>
+    <main>
+
+        <?php echo "Hei på deg"; ?>
+    </main>
 </body>
 </html>
