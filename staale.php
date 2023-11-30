@@ -7,7 +7,7 @@
 </head>
 <body>
     <main>
-
+        <p>Hei på deg</p>
         <?php echo "Hei på deg"; ?>
     </main>
 </body>
