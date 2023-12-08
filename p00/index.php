@@ -1,3 +1,11 @@
+/**
+ * Oppgave 0 - Hello, world!
+ * Porsgrunn vgs - 2023
+ * Utvikling vg2
+ * 
+ */
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

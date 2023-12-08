@@ -1,3 +1,7 @@
+// Autor: Staale Bergersen
+// Porsgrunn vgs - 2023
+// utvikling vg2
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +19,12 @@
             <input type="submit" value="Send inn">
         </form>
         <?php
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $tall = $_POST['tall'];
-            echo "<h3>Gangetabellen for $tall</h3>";
-            for ($i = 1; $i <= 10; $i++) {
-                $produkt = $tall * $i;
-                echo "$tall * $i = $produkt<br>";
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {  // Sjekker om skjemaet er sendt inn
+            $tall = $_POST['tall'];                   // Henter ut verdien fra skjemaet
+            echo "<h3>Gangetabellen for $tall</h3>";  // Skriver ut overskriften
+            for ($i = 1; $i <= 10; $i++) {            // Løkke som går fra 1 til 10
+                $produkt = $tall * $i;                // Regner ut produktet  
+                echo "$tall * $i = $produkt<br>";   // Skriver ut gangetabellen
             }
         }
         ?>

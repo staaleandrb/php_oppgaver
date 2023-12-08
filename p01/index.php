@@ -1,3 +1,11 @@
+/**
+ * Oppgave 01- Hvem er eldst!
+ * Porsgrunn vgs - 2023
+ * Utvikling vg2
+ * 
+ */
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,24 +33,24 @@
         <br>
         <input type="submit" value="Send inn">
         <?php
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $navn1 = $_POST['navn1'];
-            $alder1 = $_POST['alder1'];
-            $navn2 = $_POST['navn2'];
-            $alder2 = $_POST['alder2'];
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') { // Sjekker om skjemaet er sendt inn
+            $navn1 = $_POST['navn1'];                // Henter ut verdien fra skjemaet
+            $alder1 = $_POST['alder1'];              // Henter ut verdien fra skjemaet
+            $navn2 = $_POST['navn2'];               // Henter ut verdien fra skjemaet
+            $alder2 = $_POST['alder2'];             // Henter ut verdien fra skjemaet
 
-            if ($alder1 > $alder2) {
-                $eldstNavn = $navn1;
-                $eldstAlder = $alder1;
-                $aldersdifferanse = $alder1 - $alder2;
-            } else {
-                $eldstNavn = $navn2;
-                $eldstAlder = $alder2;
-                $aldersdifferanse = $alder2 - $alder1;
+            if ($alder1 > $alder2) {            // Sjekker hvem som er eldst
+                $eldstNavn = $navn1;            // Setter eldstNavn til navn1
+                $eldstAlder = $alder1;          // Setter eldstAlder til alder1
+                $aldersdifferanse = $alder1 - $alder2;          
+            } else {                            // Hvis ikke
+                $eldstNavn = $navn2;            // Setter eldstNavn til navn2
+                $eldstAlder = $alder2;          // Setter eldstAlder til alder2
+                $aldersdifferanse = $alder2 - $alder1;      // Regner ut aldersdifferansen
             }
 
-            echo "Den eldste personen er $eldstNavn, $eldstAlder år gammel.";
-            echo "Aldersdifferansen er $aldersdifferanse år.";
+            echo "Den eldste personen er $eldstNavn, $eldstAlder år gammel.";       // Skriver ut resultatet
+            echo "Aldersdifferansen er $aldersdifferanse år.";                      // Skriver ut resultatet
         }
         ?>
     </main>
