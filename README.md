@@ -12,3 +12,5 @@ Dette er en README-fil for PHP-oppgaver. Her kan vi samarbeide og løse PHP-oppg
 Vi ser frem til å samarbeide med deg og løse spennende PHP-oppgaver!
 
 Happy coding!
+
+#   Test
