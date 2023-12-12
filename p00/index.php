@@ -19,7 +19,7 @@
         <h1>Hello, world!</h1>
 
         <?php
-        echo "Hei verden!";
+        print "Hei verden!";
         ?>
     </main>
 </body>
