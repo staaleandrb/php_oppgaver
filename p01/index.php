@@ -56,6 +56,7 @@
             echo "Aldersdifferansen er $aldersdifferanse år.";                      // Skriver ut resultatet
         }
         ?>
+        <h1>Tullball fra Sturle</h1>
     </main>
     </body>
 </html>
