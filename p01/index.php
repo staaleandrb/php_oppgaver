@@ -45,12 +45,14 @@
             if ($alder1 > $alder2) {            // Sjekker hvem som er eldst
                 $eldstNavn = $navn1;            // Setter eldstNavn til navn1
                 $eldstAlder = $alder1;          // Setter eldstAlder til alder1
-                $aldersdifferanse = $alder1 - $alder2;          
+                $aldersdifferanse = $alder1 - $alder2;
+                          
             } else {                            // Hvis ikke
                 $eldstNavn = $navn2;            // Setter eldstNavn til navn2
                 $eldstAlder = $alder2;          // Setter eldstAlder til alder2
                 $aldersdifferanse = $alder2 - $alder1;      // Regner ut aldersdifferansen
             }
+// Kommentar fra Sturle: Hva om personene er like gamle???
 
             echo "Den eldste personen er $eldstNavn, $eldstAlder år gammel.";       // Skriver ut resultatet
             echo "Aldersdifferansen er $aldersdifferanse år.";                      // Skriver ut resultatet
