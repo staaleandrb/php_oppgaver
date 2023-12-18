@@ -31,6 +31,9 @@
         <label for="alder2">Alder 2:</label>
         <input type="number" name="alder2" id="alder2">
         <br>
+        <label for="test">test:</label>
+        <input type="number" name="test" id="test">
+        <br>
         <input type="submit" value="Send inn">
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') { // Sjekker om skjemaet er sendt inn
