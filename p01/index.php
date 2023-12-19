@@ -55,7 +55,7 @@
             else{
                 echo "De er like gamle";
             }
-// Kommentar fra Sturle: Hva om personene er like gamle??? tiulle
+// Kommentar fra Sturle: Hva om personene er like gamle??? Done
 
             echo "Den eldste personen er $eldstNavn, $eldstAlder år gammel.";       // Skriver ut resultatet
             echo "Aldersdifferansen er $aldersdifferanse år.";                      // Skriver ut resultatet
