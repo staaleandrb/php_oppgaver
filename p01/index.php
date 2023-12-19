@@ -47,10 +47,13 @@
                 $eldstAlder = $alder1;          // Setter eldstAlder til alder1
                 $aldersdifferanse = $alder1 - $alder2;
                           
-            } else {                            // Hvis ikke
+            } else if ($alder1 > $alder2) {                            // Hvis ikke
                 $eldstNavn = $navn2;            // Setter eldstNavn til navn2
                 $eldstAlder = $alder2;          // Setter eldstAlder til alder2
                 $aldersdifferanse = $alder2 - $alder1;      // Regner ut aldersdifferansen
+            }
+            else{
+                echo "De er like gamle";
             }
 // Kommentar fra Sturle: Hva om personene er like gamle???
 
