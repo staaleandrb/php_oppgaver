@@ -13,4 +13,3 @@ Vi ser frem til å samarbeide med deg og løse spennende PHP-oppgaver!
 
 Happy coding!
 
-#   Test
