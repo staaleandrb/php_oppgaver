@@ -12,10 +12,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p06-quiz</title>
-    <link rel="stylesheet" href="https://staale.imporsgrunn.no/style.css"> -->
+    <link rel="stylesheet" href="https://staale.imporsgrunn.no/style.css">
 </head>
 <body>
-    <h2>Quiz</h2>
+    <h2>Quiz - løst med lister</h2>
     
     <?php
     session_start();
