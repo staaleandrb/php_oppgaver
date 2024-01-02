@@ -1,11 +1,11 @@
 
-<!-- 
-
-    Laget av Staale Andre Bergersen
-    Porsgrunn vgs - 2023    
-    Utvikling vg2
- 
--->
+/**
+ * Oppgave p04 - stort volum
+ * Porsgrunn vgs - 2023
+ * Utvikling vg2
+ * 
+ * Laget av Staale Andre Bergersen
+ */
 
 
 <!DOCTYPE html>

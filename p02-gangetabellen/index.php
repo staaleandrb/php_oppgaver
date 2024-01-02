@@ -1,6 +1,10 @@
-// Autor: Staale Bergersen
-// Porsgrunn vgs - 2023
-// utvikling vg2
+/**
+ * Oppgave p02- gangetabellen!
+ * Porsgrunn vgs - 2023
+ * Utvikling vg2
+ * 
+ * Laget av Staale Andre Bergersen
+ */
 
 <!DOCTYPE html>
 <html lang="en">
