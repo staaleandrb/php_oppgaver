@@ -2,7 +2,8 @@
  * Oppgave 0 - Hello, world!
  * Porsgrunn vgs - 2023
  * Utvikling vg2
- * 
+ *
+ * Laget av Staale Andre Bergersen 
  */
 
 

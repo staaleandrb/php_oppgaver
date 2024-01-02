@@ -1,6 +1,10 @@
-<!--
-Laget av Staale Andre Bergersen
--->
+/**
+ * Oppgave p06 - quiz
+ * Porsgrunn vgs - 2023
+ * Utvikling vg2
+ * 
+ * Laget av Staale Andre Bergersen
+ */
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +87,7 @@ Laget av Staale Andre Bergersen
         } else {
             $resultat = 'Feil. Riktig svar er ' . $riktig_svar;
         }
-        
+
         // Vis resultatet
         echo '<p>' . $sporsmal[$sporsmal_indeks] . '</p>';
         echo '<p>Ditt svar: ' . $bruker_svar . '</p>';
