@@ -1,3 +1,13 @@
+
+<!-- 
+
+    Laget av Staale Andre Bergersen
+    Porsgrunn vgs - 2023    
+    Utvikling vg2
+ 
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +17,15 @@
     <title>Eskevolumkalkulator</title>
 </head>
 <body>
-
     <h2>Eskevolumkalkulator</h2>
-
     <?php
+
+
+    // Egendefinert funksjon for å beregne volumet av esken
+    function beregnVolum($lengde, $bredde, $hoyde) {
+        return ($lengde-2*$hoyde)*($bredde-2*$hoyde)*$hoyde;
+    }
+    
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $arkLengde = $_POST['arkLengde'];
         $arkBredde = $_POST['arkBredde'];
@@ -32,10 +47,8 @@
         echo "<p>Største volum er: $maksVolum</p>";
     }
 
-    // Egendefinert funksjon for å beregne volumet av esken
-    function beregnVolum($lengde, $bredde, $hoyde) {
-        return $lengde * $bredde * $hoyde;
-    }
+
+    
     ?>
 
     <form action="" method="post">
