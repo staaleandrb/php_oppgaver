@@ -1,14 +1,14 @@
+<!--
+Laget av Staale Andre Bergersen
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <!-- Inkluder ekstern CSS-fil for stiler -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        /* Legg til dine stiler her */
-    </style>
+    <title>p06-quiz</title>
+    <link rel="stylesheet" href="https://staale.imporsgrunn.no/style.css"> -->
 </head>
 <body>
     <h2>Quiz</h2>
@@ -21,9 +21,8 @@
 
     if (!isset($_SESSION['index'])) {
         $_SESSION['index'] = 0;
-        $_SESSION['poeng'] = 0;
-    
-    }
+        $_SESSION['poeng'] = 0;  
+        }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['knapp1'])) {
@@ -36,13 +35,14 @@
         }
     }
 
-
     function startNySesjon() {
             session_unset();
     }
 
     function skrivSporsmal() {
         global $sporsmal;
+
+        // Hvis indeksen ikke har nådd slutten av arrayen
         if ($_SESSION['index'] < count($sporsmal)){   
             // Skriv ut spørsmålet
             echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">';
@@ -83,6 +83,7 @@
         } else {
             $resultat = 'Feil. Riktig svar er ' . $riktig_svar;
         }
+        
         // Vis resultatet
         echo '<p>' . $sporsmal[$sporsmal_indeks] . '</p>';
         echo '<p>Ditt svar: ' . $bruker_svar . '</p>';
