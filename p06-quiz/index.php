@@ -43,27 +43,27 @@
 
     function skrivSporsmal() {
         global $sporsmal;
+        if ($_SESSION['index'] < count($sporsmal)){   
+            // Skriv ut spørsmålet
+            echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">';
+            echo '<p>' . $sporsmal[$_SESSION['index']] . '</p>';
 
-        // Skriv ut spørsmålet
-        echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">';
-        echo '<p>' . $sporsmal[$_SESSION['index']] . '</p>';
+            // Legg til radioknapper for hvert svaralternativ
+            echo '<label><input type="radio" name="bruker_svar" value="ja"> Ja</label>';
+            echo '<label><input type="radio" name="bruker_svar" value="nei"> Nei</label>';
 
-        // Legg til radioknapper for hvert svaralternativ
-        echo '<label><input type="radio" name="bruker_svar" value="ja"> Ja</label>';
-        echo '<label><input type="radio" name="bruker_svar" value="nei"> Nei</label>';
+            // Legg til skjult input for å sende spørsmålsindeksen
+            echo '<input type="hidden" name="sporsmal_indeks" value="' . $_SESSION['index'] . '">';
 
-        // Legg til skjult input for å sende spørsmålsindeksen
-        echo '<input type="hidden" name="sporsmal_indeks" value="' . $_SESSION['index'] . '">';
+            // Legg til knapp for å sende svar
+            echo '<button type="submit" name="submit_svar">Send Svar</button>';
+            echo '</form>';
 
-        // Legg til knapp for å sende svar
-        echo '<button type="submit" name="submit_svar">Send Svar</button>';
-        echo '</form>';
-
-        // Øk indeksen for neste gang funksjonen kalles
-        $_SESSION['index']++;
-
-        // Hvis indeksen har nådd slutten av arrayen, tilbakestill den
-        if ($_SESSION['index'] >= count($sporsmal)) {
+            // Øk indeksen for neste gang funksjonen kalles
+            $_SESSION['index']++;
+    }
+        // Hvis indeksen har nådd slutten av arrayen
+        else  {
             echo '<p>Spillet er over.<br>Du fikk ' . $_SESSION['poeng'] . ' poeng. </p>';
         }
     }
