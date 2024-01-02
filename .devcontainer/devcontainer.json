@@ -1,0 +1,12 @@
+{
+    "name": "PHP Development",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "felixfbecker.php-debug"
+    ],
+    "settings": {
+      "php.validate.executablePath": "/usr/bin/php"
+    },
+    "forwardPorts": [80]
+  }
+  
