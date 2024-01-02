@@ -16,7 +16,7 @@
 </head>
 <body>
     <h2>Quiz</h2>
-
+    
     <?php
     session_start();
 
