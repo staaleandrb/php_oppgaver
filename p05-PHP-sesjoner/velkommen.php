@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Vekommen</h1>
+    echo "Velkommen " . $_SESSION['username'] . "!";
 </body>
 </html>
