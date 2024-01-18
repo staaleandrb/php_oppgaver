@@ -43,7 +43,6 @@ mysqli_close($conn);
     <header>
         <p>VIS ANSATTE<br></p>
     </header>
-
     <main>    
         <table>
             <thead>

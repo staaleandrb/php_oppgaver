@@ -1,4 +1,9 @@
+
+
 <?php
+
+// Denne filen inneholder databasetilkoblingsinformasjonen som brukes i de andre filene i prosjektet.
+// Den kobler til databasen og oppretter en forbindelse som kan brukes i de andre filene.
 
 //Parametere til databaseserver 
 $host = 'localhost';
