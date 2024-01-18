@@ -73,7 +73,8 @@ function skrivSporsmal() {
     if ($_SESSION['index'] < count($sporsmalData)){   
         // Skriv ut spørsmålet
         echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">';
-        echo '<p>' . $sporsmalData[$_SESSION['index']['sporsmaltekst']] . '</p>';
+        echo '<p>' . $sporsmalData[$_SESSION['index']]['sporsmaltekst'] . '</p>';
+
 
         // Legg til radioknapper for hvert svaralternativ
         echo '<label><input type="radio" name="bruker_svar" value="ja"> Ja</label>';
