@@ -20,9 +20,9 @@
     <?php
 session_start();
 
-$db_host = 'din_database_host';
-$db_user = 'din_database_bruker';
-$db_password = 'din_database_passord';
+$db_host = 'localhost';
+$db_user = 'root';
+$db_password = '';
 $db_name = 'quiz_database';
 
 // Opprett tilkobling til databasen
