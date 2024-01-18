@@ -1,9 +1,13 @@
+<!--
+    Laget av Sturle Stiansen
+
+-->
+
+
 <?php
 
 //Henter forbindelses-streng
 include 'connect.php';
-
-
 
 //Prosedyre for lese
 $sql_les = "SELECT anr, etternavn, fornavn  FROM person ORDER BY etternavn, fornavn";
@@ -24,8 +28,6 @@ foreach($ansatte as $person)
 mysqli_free_result($result_les);    
 mysqli_close($conn);
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +52,6 @@ mysqli_close($conn);
                     <th>Ansattnr</th>
                     <th>Etternavn</th>
                     <th>Fornavn</th>
-                    
                 </tr>
             </thead>
             <tbody>

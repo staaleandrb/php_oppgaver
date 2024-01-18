@@ -1,3 +1,8 @@
+<!--
+  Laget av Sturle Stiansen
+
+-->
+
 <?php
 
 //Henter forbindelses-streng

@@ -19,15 +19,9 @@
       <form action='ny-bekreft.php' method="post">
         <label for="fornavn">Fornavn: </label> <br>
         <input type='text' name='fornavn' id="fornavn" required> <br> <br>
-
         <label for="etternavn">Etternavn: </label> <br>
         <input type='text' name='etternavn' id="etternavn" required> <br> <br>
-        
-        
-
         <input type='submit' name='submit' id="submit" value="Registrer" > <br>
-        
-        
       </form>   
     </main>
     </body>
