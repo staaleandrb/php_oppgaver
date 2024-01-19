@@ -1,5 +1,3 @@
-
-
 <?php
 
 // Denne filen inneholder databasetilkoblingsinformasjonen som brukes i de andre filene i prosjektet.
