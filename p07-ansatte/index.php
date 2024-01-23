@@ -49,7 +49,13 @@ mysqli_close($conn);
                         <input type="hidden" name="anr" value="<?php echo $person['anr']; ?>">
                         <button type="submit" onclick="return confirm('Er du sikker på at du vil slette denne personen?')">Slett</button>
                         </form>
-                    </td>   
+                    </td>
+                    <td>
+                        <form action="rediger.php" method="post">
+                        <input type="hidden" name="anr" value="<?php echo $person['anr']; ?>">
+                        <button type="submit">Rediger</button>
+                    </form>
+                </td>   
                 </tr>
                     
 
