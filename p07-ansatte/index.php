@@ -35,7 +35,7 @@ mysqli_close($conn);
                     <th>Ansattnr</th>
                     <th>Etternavn</th>
                     <th>Fornavn</th>
-                    <th>Handlinger</th>
+                    <th colspan="2">Handlinger</th>
                 </tr>
             </thead>
             <tbody>
