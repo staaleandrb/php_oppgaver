@@ -33,12 +33,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <input type="hidden" name="anr" value="<?php echo $person_to_rediger['anr']; ?>">
               <label for="etternavn">Etternavn:</label>
               <input type="text" id="etternavn" name="etternavn" value="<?php echo $person_to_rediger['etternavn']; ?>" required>
-              
+              <br>
               <label for="fornavn">Fornavn:</label>
               <input type="text" id="fornavn" name="fornavn" value="<?php echo $person_to_rediger['fornavn']; ?>" required>
               
               <!-- Legg til flere felt etter behov -->
-
+                <br>
               <button type="submit">Lagre endringer</button>
           </form>
       </main>
