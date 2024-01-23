@@ -35,6 +35,7 @@ mysqli_close($conn);
                     <th>Ansattnr</th>
                     <th>Etternavn</th>
                     <th>Fornavn</th>
+                    <th>Handlinger</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,9 +43,18 @@ mysqli_close($conn);
                 <tr>
                     <td><?php echo $person['anr']; ?></td>    
                     <td><?php echo $person['etternavn']; ?></td>
-                    <td><?php echo $person['fornavn']; ?></td>
-                                        
+                    <td><?php echo $person['fornavn']; ?></td>                            
+                    <td>
+                        <form action="slett.php" method="post">
+                        <input type="hidden" name="anr" value="<?php echo $person['anr']; ?>">
+                        <button type="submit" onclick="return confirm('Er du sikker på at du vil slette denne personen?')">Slett</button>
+                        </form>
+                    </td>   
                 </tr>
+                    
+
+
+
                 <?php } ?>
             </tbody>
         </table>

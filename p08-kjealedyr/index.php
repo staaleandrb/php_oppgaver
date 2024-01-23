@@ -8,6 +8,7 @@
 </head>
 <body>
     <main>
+        <?php include 'meny.php'; ?>
         <h1>Velkommen til kjæledyr</h1>
     </main>
 </body>
