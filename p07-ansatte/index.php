@@ -57,9 +57,6 @@ mysqli_close($conn);
                     </form>
                 </td>   
                 </tr>
-                    
-
-
 
                 <?php } ?>
             </tbody>
